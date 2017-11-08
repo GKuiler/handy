@@ -4,13 +4,118 @@ body {
 	font-size : 14px;
 	background-color : black;
 	/* toe te voegen */
+	margin: 0;
+}
+#title {
+	position: relative;
+	bottom: 170px;
+}
+.opacityBg {
+	background-color:rgba(255, 255, 255, 0.4);
+	position: relative;
+	padding: 6px;
+}
+/*=========================== Nav style =================================*/
+.nav {
+	width: 100%;
+	text-align: center;
+	background: black; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(black, grey); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(black, ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(black, grey); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#000000, #404040); /* Standard syntax */
+    padding: 5px 0 3px 0;
+}
+.nav li{
+	display: inline-block;
+}
+.nav ul {
+	margin: 0;
+	list-style: none;
+}
+.nav a {
+	text-decoration: none;
+	color: grey;
+	margin: 0 30px;
+}
+.nav:hover a{
+	color: black;
+	font-weight: bold;
+}
+.nav:hover ul{
+	background-color: white;
+	
 }
 .all {
 	text-align : left;
 	width : 700px;
 	margin : 100px auto;
 	min-height : 600px;
-	background-image : url(bg.jpg);
+	background-image : url(images/bg.jpg);
 	border : 4px solid red;
+	padding: 0;
 }
+/*=========================== Toolbox img dropdown menu =================================*/
+.dropdown-content {
+	display: none;
 
+}
+#toolbox:hover .dropdown-content {
+    display: block;
+    z-index: 1;
+    position: relative;
+    bottom: 80px;
+    right: 40px;
+}
+.dropdown-content a{
+	text-decoration: none;
+}
+.dropdown-content ul {
+	list-style: none;
+
+}
+.dropdown-content li {
+	border: 1px solid black;
+	padding: 3px;
+	width: 100px;
+	background-color: white;
+}
+.dropdown-content li:hover {
+	background-color: #ffff80;
+}
+/*=========================== word definition hover =================================*/
+#humanfactor-content {
+	display: none;
+}
+#humanfactor:hover #humanfactor-content{
+	display: block;
+	width: 200px;
+	background-color: white;
+	border: 2px solid blue;
+	position: absolute;
+	left: 560px;
+	padding: 3px;
+}
+/*=========================== img(of tools) placements =================================*/
+#hammer, #saw, #screwdriver, #pincers {
+	position: relative;
+}
+#hammer {
+	bottom: 70px;
+}
+#saw {
+	right: 350px;
+	top: 40px;
+}
+#toolbox {
+	right: 630px;
+	top: 320px;
+	position: absolute;
+}
+#screwdriver {
+	left: 350px;
+	bottom: 130px;
+}
+#pincers {
+	left: 560px;
+}
