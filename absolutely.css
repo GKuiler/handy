@@ -103,9 +103,17 @@ body {
 #hammer {
 	bottom: 70px;
 }
+#hammer:hover {
+	bottom: 60px;
+	transition: linear 0.15s;
+}
 #saw {
 	right: 350px;
 	top: 40px;
+}
+#saw:hover {
+	right: 340px;
+	transition: linear 0.15s;
 }
 #toolbox {
 	right: 630px;
@@ -116,6 +124,14 @@ body {
 	left: 350px;
 	bottom: 130px;
 }
+#screwdriver:hover {
+	left: 340px;
+	transition: linear 0.15s;
+}
 #pincers {
 	left: 560px;
+}
+#pincers:hover {
+	left: 540px;
+	transition: linear 0.15s;
 }
